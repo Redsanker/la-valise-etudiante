@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Valise Étudiante</title>
+  <link rel="icon" type="image/x-icon" href="./css/img/mascot.ico">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css" crossorigin="">
+</head>
+
+<body>
+  <header>
+    <a href="./index.html"><img src="./css/img/logo.svg" alt="Logo La Valise Étudiante" class="logo"></a>
+    <a href="https://www.agglo-laval.fr/" target="_blank"><img src="./css/img/logoLavalAgglo.svg"
+        alt="Logo Laval Agglomération" class="logo"></a>
+  </header>
+
+  <main>
+    <h1>Ton avenir à Laval, c’est capital !</h1>
+    <div id="chat-container">
+      <!-- Messages du chatbot -->
+    </div>
+    <!-- Layout contenant la pop-up (liste des articles) et la sidebar (détail d'un article) -->
+    <div id="layout">
+      <div id="popup-container" class="popup-container">
+        <div id="popup-content">
+          <div id="popup-header">
+            <div class="bot-bubble-container">
+              <div class="mascot-container"><img src="../css/img/mascot.svg" alt="Mascotte"></div>
+              <div id="bot-message" class="bubble bot"></div>
+            </div>
+            <div class="search-bar-container">
+              <div class="search-bar">
+                <input type="text" id="search-bar" placeholder="Écris ta recherche ici...">
+                <i class="ri-search-line"></i>
+              </div>
+              <button id="popup-close" class="btn-close"><i class="ri-close-large-line"></i></button>
+            </div>
+          </div>
+          <div id="popup-list" class="cards"></div>
+        </div>
+      </div>
+      <div id="sidebar">
+        <button id="close-sidebar" class="btn-close">FERMER<i class="ri-close-large-line"></i></button>
+        <div id="sidebar-content"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="#">Langues</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Mentions légales</a></li>
+      <li><a href="#">Politique de confidentialité</a></li>
+    </ul>
+  </footer>
+
+  <!-- Animation d'arrière-plan -->
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+  <!-- Bibliothèque pour formater le markdown en HTML -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
